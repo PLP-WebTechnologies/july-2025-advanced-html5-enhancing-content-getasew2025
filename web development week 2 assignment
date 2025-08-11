@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form with Semantic Layout</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form Example</h1>
+    <nav>
+      <ul>
+        <li><a href="#form">Go to Form</a></li>
+        <li><a href="#info">Information Table</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="form">
+      <h2>Interactive Registration Form</h2>
+      <form action="#" method="get" autocomplete="on" aria-label="Registration Form">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required autocomplete="email">
+
+          <label for="age">Age (readonly example):</label>
+          <input type="number" id="age" name="age" value="30" readonly>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color">
+
+          <label for="birthdate">Date of Birth:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" placeholder="Tell us a bit about yourself" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose Options</legend>
+          <p>Subscription:</p>
+          <label><input type="checkbox" name="subscribe" checked> Receive updates</label>
+
+          <p>Preferred Contact:</p>
+          <label><input type="radio" name="contact" value="email" checked> Email</label>
+          <label><input type="radio" name="contact" value="phone"> Phone</label>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">— Select —</option>
+            <option>Ethiopia</option>
+            <option>Kenya</option>
+            <option>Somalia</option>
+          </select>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="info">
+      <h2>Information Table</h2>
+      <table border="1">
+        <caption>Sample Data Overview</caption>
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Country</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Getasew</td><td>getasewm@gmail.com</td><td>Ethiopia</td></tr>
+          <tr><td>Eddy</td><td>eddy@gmail.com</td><td>Kenya</td></tr>
+          <tr><td>Ahmed</td><td>Ahmed@gmail.com</td><td>Somalia</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="gallery">
+      <h2>Media Gallery</h2>
+      <figure>
+        <img src="https://images.pexels.com/photos/12521170/pexels-photo-12521170.png" alt="Sample placeholder image" width="400" height="400">
+        <figcaption>Example image with accessible caption.</figcaption>
+      </figure>
+      <figure>
+        <video controls width="480">
+          <source src="https://videos.pexels.com/video-files/4713259/4713259-hd_1920_1080_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Sample video demonstration.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 getasew marekegn </p>
+  </footer>
+</body>
+</html>
